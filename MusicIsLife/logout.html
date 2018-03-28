@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MIL Logged Out</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/mainstyle.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/minfonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="mus-top">
+        <div class="mus-bar mus-black mus-card">
+            <a class="mus-bar-item mus-button mus-padding-large mus-hide-medium mus-hide-large mus-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="mus-bar-item mus-button mus-padding-large">Home</a>
+            <!--<a href="logout.html" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Logout</a>
+            <a href="#concerts" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Concerts</a>
+            <a href="#contact" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Contact</a>-->
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="mus-bar-block mus-black mus-hide mus-hide-large mus-hide-medium mus-top" style="margin-top: 46px">
+        <a href="index.html" class="mus-bar-item mus-button mus-padding-large">Home</a>
+        <!--<a href="#aboutus" class="mus-bar-item mus-button mus-padding-large mus-hide-small">About Us</a>
+        <a href="#concerts" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Concerts</a>
+        <a href="#contact" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Contact</a>-->
+    </div>
+
+    <!-- The About Us Section -->
+    <div class="mus-container mus-content mus-center mus-padding-64" style="max-width: 800px" id="aboutus">
+        <h1 class="mus-wide">You have been Logged Out.</h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mus-container mus-padding-64 mus-center mus-opacity mus-light-grey mus-xlarge">
+        <a href="stafflogin.html" class="mus-bar-item mus-button mus-padding-large mus-hide-small">STAFF!</a>
+        <!--<i class="fa fa-facebook-official mus-hover-opacity"></i>
+        <i class="fa fa-instagram mus-hover-opacity"></i>
+        <i class="fa fa-snapchat mus-hover-opacity"></i>
+        <i class="fa fa-pinterest-p mus-hover-opacity"></i>
+        <i class="fa fa-twitter mus-hover-opacity"></i>
+        <i class="fa fa-linkedin mus-hover-opacity"></i>-->
+        <p class="mus-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+
+    <!--Adding in any javascript for the pages-->
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("mus-show") == -1) {
+                x.className += " mus-show";
+            } else {
+                x.className = x.className.replace(" mus-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>

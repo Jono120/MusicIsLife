@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MIL Staff</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/mainstyle.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/minfonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="mus-top">
+        <div class="mus-bar mus-black mus-card">
+            <a class="mus-bar-item mus-button mus-padding-large mus-hide-medium mus-hide-large mus-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="mus-bar-item mus-button mus-padding-large">Home</a>
+            <a href="logout.html" class="mus-bar-item mus-button mus-padding-large mus-hide-small mus-right">Logout</a>
+            <!--<a href="#concerts" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Concerts</a>
+            <a href="#contact" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Contact</a>-->
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="mus-bar-block mus-black mus-hide mus-hide-large mus-hide-medium mus-top" style="margin-top: 46px">
+        <a href="index.html" class="mus-bar-item mus-button mus-padding-large">Home</a>
+        <!--<a href="#aboutus" class="mus-bar-item mus-button mus-padding-large mus-hide-small">About Us</a>
+        <a href="#concerts" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Concerts</a>
+        <a href="#contact" class="mus-bar-item mus-button mus-padding-large mus-hide-small">Contact</a>-->
+    </div>
+
+    <h1>Staff page</h1>
+
+    <h2>All shows</h2>
+
+    <p><a href="#">Dowload spreadsheet with all ticket totals</a></p>
+
+    <p>&nbsp;</p>
+
+    <h2>individual show</h2>
+
+    <p>Select a show to see how many tickets have been sold:</p>
+
+
+
+    <select>
+
+        <option value="Select">Select show</option>
+
+        <option value="Eminiem">Eminiem</option>
+
+        <option value="Beyonce">Beyonce</option>
+
+        <option value="Rhianna">Rhianna</option>
+
+        <option value="Jimmy Eat World">Jimmy Eat World</option>
+
+        <option value="Weird Al Jankovic">Weird Al Jankovic</option>
+
+        <option value="Drake">Drake</option>
+
+        <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+
+        <option value="The Bellas">The Bellas</option>
+
+        <option value="Adele">Adele</option>
+
+        <option value="Ed Sheeran">Ed Sheeran</option>
+
+
+
+    </select>
+
+    <p></p>
+
+
+
+    <form id="form1" name="form1" method="post" action="">
+
+        <label for="ticketsSold">No of tickets sold</label><input type="text" name="ticketsSold" id="ticketsSold" />
+
+
+
+    </form>
+
+
+
+    <form id="form1" name="form1" method="post" action="">
+
+        <label for="ticketsSold">No of tickets left</label><input type="text" name="ticketsLeft" id="ticketsLeft" />
+
+
+
+    </form>
+
+
+
+    <h2>Add a show</h2>
+
+
+
+    <form id="form2" name="form2" method="post" action="">
+
+        <label for="showname">Name of show</label><input type="text" name="ticketsSold" id="ticketsSold" />
+
+        <p></p><label for="showdescription">Show description</label><input type="text" name="ticketsSold" id="ticketsSold" />
+
+        <p></p><label for="dateofshow">Date of show</label><input type="date" name="ticketsSold" id="ticketsSold" />
+
+        <p></p><label for="timeofshow">No of tickets available</label><input type="text" name="ticketsSold" id="ticketsSold" />
+
+        <p></p><label for="promo">filename of promo image</label><input type="text" name="ticketsSold" id="ticketsSold" />
+
+        <p></p>
+
+        <input type="submit">
+
+    </form>
+
+
+
+
+
+
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="mus-container mus-padding-64 mus-center mus-opacity mus-light-grey mus-xlarge">
+        <a href="stafflogin.html" class="mus-bar-item mus-button mus-padding-large mus-hide-small">STAFF!</a>
+        <!--<i class="fa fa-facebook-official mus-hover-opacity"></i>
+        <i class="fa fa-instagram mus-hover-opacity"></i>
+        <i class="fa fa-snapchat mus-hover-opacity"></i>
+        <i class="fa fa-pinterest-p mus-hover-opacity"></i>
+        <i class="fa fa-twitter mus-hover-opacity"></i>
+        <i class="fa fa-linkedin mus-hover-opacity"></i>-->
+        <p class="mus-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+
+    <!--Adding in any javascript for the pages-->
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("mus-show") == -1) {
+                x.className += " mus-show";
+            } else {
+                x.className = x.className.replace(" mus-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>
